@@ -1,0 +1,145 @@
+page{
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.left {
+  width: 20%;
+  font-size: 10px;
+  /* background-color: #f4f4f4; */
+}
+
+.left view {
+  text-align: center;
+  height: 128rpx;
+  line-height: 24rpx;
+}
+
+.select {
+  font-weight: bold;
+  color: #fff;
+  background: #ffcd68;
+}
+
+
+.remarks{
+  color: #FFFFFF;
+  font-size:28rpx;
+  padding: 0 4%;
+}
+
+.normal {
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.right {
+  width: 80%;
+  margin: 0px;
+}
+
+
+.img {
+  width: 88rpx;
+  height: 88rpx;
+  
+}
+
+
+.text {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  margin: 4%;
+  color: #fff;
+ 
+}
+
+.name{
+  margin: 4%;
+  font-size:28rpx;
+}
+
+.lb{
+  font-size:28rpx;
+  padding: 0 4%;
+  height: 68rpx;
+  line-height: 72rpx;
+}
+
+.lb2{
+  font-size:28rpx;
+  padding: 0 4%;
+  height: 68rpx;
+  line-height: 72rpx;
+  color: #FFFFFF;
+}
+
+
+
+
+.title{
+  padding: 0 4%;
+  color: #FFFFFF;
+  margin-top: 32rpx;
+  font-size:34rpx;
+}
+
+.yq{
+  margin-top: 16rpx;
+  padding: 0 4%;
+  font-size:28rpx;
+  color: #FFFFFF;
+}
+
+.mt68{
+  margin-top: 68rpx;
+}
+
+.shiimg {
+  width: 558rpx;
+  height: 208rpx;
+  margin: 4%;
+}
+
+.pr{
+  position: relative;
+}
+.paa{
+  position: absolute;
+  top: 896rpx;
+  right: 140rpx;
+}
+.pa{
+  position: absolute;
+  top: 896rpx;
+  right: 32rpx;
+}
+
+.fx{
+  width: 110rpx;
+  height: 88rpx;
+  
+}
+
+.fh{
+  width: 110rpx;
+  height: 88rpx;
+}
+
+.button{
+  display: inline-block;
+  border: 0;
+  height: 88rpx;
+  background-color: transparent;
+}
+
+
+.button::after{ 
+    border:none;
+ }

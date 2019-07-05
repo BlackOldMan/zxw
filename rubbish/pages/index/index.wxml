@@ -1,0 +1,50 @@
+<view class='pr'>
+  <view class="content">
+    <view class='left' style="height:{{winHeight}}px">
+      <block wx:for="{{str}}" wx:for-index="idx" wx:for-item="item" wx:key="itemId">
+        <view data-idx="{{idx}}" style="background:{{idx==currentTab ?  bgcolor : '#FFFFFF'}};font-size:20rpx;color:{{idx==currentTab ?  '#FFFFFF' : '#999999'}}" catchtap='switchNav'>
+          <!-- <image class='img' src='{{item.icon}}'></image> -->
+          <image class='img' src='{{idx==currentTab ? item.selectedicon : item.icon}}'></image>
+          <view>
+            {{item.name}}
+          </view>
+        </view>
+      </block>
+
+    </view>
+    <view class='right' style="height:{{winHeight}}px">
+      <view style="background: {{bgcolor}}" class='category'>
+        <swiper current='{{idx}}' style="height:{{winHeight}}px" vertical="{{true}}">
+          <swiper-item id='{{name.id}}' wx:for='{{str}}' wx:key catchtouchmove='catchTouchMove'>
+            <scroll-view scroll-y style="height: 100%;" bindscroll="scrll" scroll-top="{{scrollTop}}">
+              <image class='shiimg' src='{{item.image}}'></image>
+              <view class='remarks'>{{item.remarks}}</view>
+              <view class='title'>投放要求</view>
+              <view class='yq' wx:for="{{item.yq}}" wx:for-item="items" wx:key>
+                {{items.one}}
+              </view>
+              <view class='mt68'>
+                <block wx:for="{{item.nname}}" wx:for-item="items" wx:key>
+                  <view style="background: {{color}}" class='lb' wx:if="{{index % 2 == 0}}">{{items.nc}}</view>
+                  <view class='lb2' wx:else>{{items.nc}}</view>
+                </block>
+              </view>
+            </scroll-view>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+  </view>
+  <view class='paa'>
+   <button hover-class='none' class='button' open-type='share'>
+    <image class='fx' src='/images/fxxx.png'></image>
+    </button>
+  </view>
+  <view class='pa'>
+   
+    <button hover-class='none' class='button' bindtap='goTop'>
+      <image class='fh' src='/images/fh.png'></image>
+    </button>
+
+  </view>
+</view>
